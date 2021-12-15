@@ -1,0 +1,64 @@
+body {
+    background-color: darkcyan;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "ar ar ar"
+                         "f f f";
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+header {
+    grid-area: h;
+    background-color: white;
+}
+
+header h1 {
+    text-decoration: underline;
+}
+
+nav {
+    grid-area: n;
+    background-color: gray;
+}
+
+nav ul li {
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+nav ul li:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+article {
+    grid-area: ar;
+}
+
+footer {
+    grid-area: f;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+}
